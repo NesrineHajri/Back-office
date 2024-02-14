@@ -11,7 +11,7 @@ class SignUpController extends AbstractController
     #[Route('/signup', name: 'app_sign_up')]
     public function index(): Response
     {
-        return $this->render('sign_up/index.html.twig', [
+        return $this->render('back office/sign_up/index.html.twig', [
             'controller_name' => 'SignUpController',
         ]);
     }
@@ -21,7 +21,7 @@ class SignUpController extends AbstractController
     #[Route('/reset-password', name: 'app_reset_password')]
     public function resetPassword(): Response
     {
-        return $this->render('sign_up/reset-password.html.twig', [
+        return $this->render('back office/sign_up/reset-password.html.twig', [
             'controller_name' => 'SignUpController',
         ]);
     }

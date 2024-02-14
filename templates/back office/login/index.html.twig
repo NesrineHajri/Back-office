@@ -8,16 +8,10 @@
 
     <title>{% block title %} SkillSeekr {% endblock %} </title>
 
-    <!-- Favicon icon -->
-    <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon.png">
-    
     {% block css %}
+
     <link href="./css/style.css" rel="stylesheet">
 
-
-     <!--**********************************
-        Additional CSS
-    ***********************************-->
     <style>
         .divider:after,
         .divider:before {
@@ -43,7 +37,7 @@
 </head>
 
 <body class="h-100">
-
+{% block body %}
     <div class="authincation h-100">
         <div class="container-fluid h-100">
             <div class="row justify-content-center h-100 align-items-center">
@@ -98,11 +92,13 @@
 
 
     {% block js %}
-    <!-- Required vendors -->
+
     <script src="./vendor/global/global.min.js"></script>
     <script src="./js/quixnav-init.js"></script>
+    
     {% endblock %}
 
+{% endblock %}
 </body>
 
 </html>
